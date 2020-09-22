@@ -9,7 +9,7 @@ from pypresence import Presence
 
 pathy = os.getcwd()
 penismaster = 'outputpath'
-
+client_id = '758065753504088157'
 RPC = Presence(client_id)
 RPC.connect()
 RPC.update(state="Idle")
