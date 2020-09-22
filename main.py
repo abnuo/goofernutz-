@@ -31,6 +31,7 @@ def render(output,input,geedey,mirx,miry,reversie,sfxe,blinke,accel,sfxfun,clips
             (250, 250))
     superpoop = randomtime()
     poopman = superpoop
+    RPC.update(state="Rendering")
     for i in range(int(geedey)):
         print("Applying effect : PLAIN")
         superpoop = randomtime()
