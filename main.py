@@ -8,6 +8,18 @@ import os
 import string
 from pypresence import Presence
 
+html = []
+
+cherrypy.config.update({
+                        'server.socket_port': 80,
+                       })
+
+class hello(object):
+    @cherrypy.expose
+    def index(self):
+        return html
+
+cherrypy.quickstart(hello(), '/goofernutz')
 pathy = os.getcwd()
 penismaster = 'outputpath'
 client_id = '758065753504088157'
